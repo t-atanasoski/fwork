@@ -1,0 +1,10 @@
+#FILES
+.env
+
+#PATHS
+vendor/*
+nbproject
+.idea
+
+
+!.gitkeep

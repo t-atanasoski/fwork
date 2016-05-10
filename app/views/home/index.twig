@@ -1,0 +1,20 @@
+{% extends 'layout/base.twig' %}
+
+{% block head %}
+    {{  parent() }}
+    <!-- Example of extending header -->
+{% endblock %}
+
+{% block content %}
+    <h1 class="page-header">New user of Fwork</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading">{{ welcome_message }} - Passed as twig variable</div>
+        <p>{{ database_name }} - Passed as twig variable from config </p>
+    </div>
+{% endblock %}
+{% block footer %}
+    {{ parent() }}
+    <script type="text/javascript">
+        <!-- Example of extending footer -->
+    </script>
+{% endblock %}
